@@ -1,0 +1,33 @@
+.login-page,
+.register-page {
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 30, 50, 1));
+}
+
+#nome-sistema {
+    color: aliceblue;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Faz o conteúdo ocupar o máximo possível, empurrando o rodapé para baixo */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* A área de conteúdo ocupa o espaço restante entre header e footer */
+.content-wrapper {
+  flex: 1;
+}
+
+/* Estiliza o rodapé */
+.main-footer {
+  background-color: #f4f6f9;
+  padding: 15px;
+  color: #333;
+  font-size: 14px;
+}
+

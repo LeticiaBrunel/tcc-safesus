@@ -1,0 +1,137 @@
+body {
+   margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #CDE7F6;
+  min-height: 100vh; /* garante centralização em qualquer tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tela-login {
+  position: relative;
+  width: 900px;
+  height: 550px;
+  display: flex;
+}
+
+/* Lado azul */
+/* 🔵 Lado azul */
+.lado-azul {
+  background-color: #0a1a63;
+  width: 50%;             /* ligeiramente menor para encaixar com o cinza */
+  border-radius: 80px 0 0 80px;
+  position: relative;
+}
+.conteudo-azul {
+  position: absolute;   /* para posicionamento absoluto dentro do lado-azul */
+  top: 50%;            /* 50% do topo do contêiner */
+  left: 50%;           /* 50% da esquerda do contêiner */
+  transform: translate(-50%, -50%); /* desloca metade da largura e altura para centralizar */
+  text-align: center;
+}
+
+.conteudo-azul img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  transform: translateX(-20px); /* 👉 move 10px para a esquerda */
+}
+
+.conteudo-azul h2 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+   transform: translateX(-20px);
+}
+
+/* Lado cinza */
+.lado-cinza {
+  background-color: #e4e7eb;
+  width: 58.5%;
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 2; /* sobrepõe o azul */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.conteudo-cinza {
+  width: 75%;
+}
+
+.conteudo-cinza h2 {
+    font-weight: bold; 
+    text-align: center;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.conteudo-cinza p {
+    text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #0a1a63;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #162e9c;
+}
+.senha-container {
+    position: relative;
+}
+
+.senha-container input {
+    width: 100%;
+    padding-right: 40px; /* espaço para o ícone */
+    box-sizing: border-box;
+}
+
+.toggle-senha {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;  /* diminuiu o tamanho */
+    height: 20px; /* diminuiu o tamanho */
+}
+
+
+
